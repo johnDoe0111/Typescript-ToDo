@@ -1,0 +1,29 @@
+@import "_vars";
+@import "_mixins";
+
+.todo-wrapper {
+  width: 745px;
+  margin: 0 auto;
+  position: relative;
+  .default {
+    border-top: 1px solid #333333;
+    margin-top: 24px;
+    padding: 64px 24px;
+    border-radius: 8px;
+    img {
+      display: block;
+      width: 56px;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+      padding-top: 16px;
+      color: $gray300;
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+  .default-none {
+    display: none;
+  }
+}

@@ -1,0 +1,129 @@
+@import "_vars";
+@import "_mixins";
+
+.todo-input-wrapper {
+  background-color: $gray700;
+  .count {
+    color: #fff;
+  }
+  .input-item {
+    position: absolute;
+    top: 170px;
+    left: 390px;
+    span {
+      display: inline-block;
+      width: 69px;
+      margin-right: 0px;
+    }
+    input {
+      width: 603px;
+      height: 54px;
+      background-color: $gray500;
+      border: 1px solid $gray700;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      color: $gray300;
+      padding-left: 15px;
+    }
+    button {
+      width: 125px;
+      height: 52px;
+      background-color: $blue-dark;
+      color: $gray100;
+      margin-left: 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      .icon {
+        color: $gray100;
+      }
+      .disable {
+        display: none;
+      }
+      .load {
+        border: 2px solid $gray100;
+        border-radius: 50%;
+        border-top: 2px solid $blue-dark;
+        width: 12px;
+        height: 12px;
+        animation: rotate 2s linear infinite;
+        position: absolute;
+        right: 15px;
+        bottom: 20px;
+      }
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .disable-load {
+        display: none;
+      }
+    }
+  }
+}
+
+.img-block {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 22px;
+    height: 36px;
+    margin-top: 8px;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: $purple-dark;
+    padding-left: 12px;
+    span {
+      color: $blue;
+    }
+  }
+  p {
+    color: $purple-dark;
+    padding: 25px 0 0 9px;
+    span {
+      color: $blue;
+    }
+  }
+}
+
+.text-wrapper {
+  @include font-bold;
+  .second-text-wrapper {
+    display: flex;
+    .first {
+      padding-left: 8px;
+      span {
+        background-color: $gray400;
+        color: $gray200;
+        padding: 2px 8px;
+        border-radius: 999px;
+      }
+    }
+  }
+  .third-text-wrapper {
+    display: flex;
+    width: 145px;
+    .first {
+      padding-left: 8px;
+      span {
+        background-color: $gray400;
+        color: $gray200;
+        padding: 2px 8px;
+        border-radius: 999px;
+      }
+    }
+  }
+}

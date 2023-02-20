@@ -1,0 +1,16 @@
+@import "_todo-input";
+@import "_App";
+@import "_vars";
+@import "_todos";
+@import "_todos-block";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter Tight", sans-serif;
+}
+
+body {
+  background-color: $gray600;
+}
